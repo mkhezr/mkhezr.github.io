@@ -1,5 +1,16 @@
 ---
-title: "About This Website"
+title: ""
 ---
+To some things, I find it hard to give a name. Like myself. Am I a software engineer, a _data scientist_, a poet? 
 
-More about this website.
+I have a masters degree in Computer Science. Not knowing how software and life combine, I left my tech job two years ago to become a writer. At the time I thought I would be leaving it all behind. This is what I wrote on [facebook](https://www.facebook.com/mkhezr), January 20, 2016:
+
+“I never realized before why I did not like my job. Being a programmer, you will encounter stories. The code you have to read, the code that you are asked to understand and modify, is the story. It is written by some dude who wouldn’t know how to read his own story.
+
+I didn’t like many of the things I read”
+ 
+Looking back now, I realize I’ve only been drawn closer to technology in ways I couldn’t imagine before.
+
+
+
+
