@@ -2,4 +2,7 @@
 title: ""
 ---
 
-Hello, Website!
+```{r, echo=FALSE}
+library(wordcloud2)
+wordcloud2(demoFreq, size = 1,shape = 'star')
+```
