@@ -4,5 +4,9 @@ title: ''
 
 ```{r, echo=FALSE}
 library(wordcloud2)
-wordcloud2(demoFreq, size = 1,shape = 'star', clickFunction = "function(item, dimension, event) {window.location.href = '/about.html';}")
+wordcloud2(demoFreq, size = 1,shape = 'star', clickFunction = "function(item, dimension, event) {
+  // generate relative url based on the word clicked
+  word = item[0];
+  window.location.href = '/' + word + '.html';
+  }")
 ```
