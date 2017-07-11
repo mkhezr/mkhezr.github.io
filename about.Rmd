@@ -1,9 +1,13 @@
 ---
 title: ""
 ---
-To some things, I find it hard to give a name. Like myself. Am I a software engineer, a _data scientist_, a poet? 
+To some things I find it hard to give a name. Like myself. Am I a software engineer, a “data scientist”, a poet? 
 
-Not knowing how software and life combine, I left my tech job two years ago to become a writer. At the time I thought I would be leaving it all behind. Looking back now, I realize I’ve only been drawn closer to technology in ways I couldn’t imagine before.
+I have a masters degree in Computer Science with a focus on Data Mining and AI. Not knowing how software and life combine, however, I left my tech job two years ago to become a writer. At the time I thought I would be leaving it all behind. Looking back now, I realize I’ve only been drawn closer to technology in ways I couldn’t imagine before. 
 
-Today, I think of computers as tools which can help us navigate this complex life we all live. This position of making use of a computer to accomplish a purpose (navigating complexities) is very different from the position I took before (programming useless applications). By puting purpose in the middle, we are forced to find a way; and that is how we discover helpful technology, or build some.
+Today, I think of computers as tools which can help us navigate this complex life we all live. This position of making use of a computer to accomplish a purpose (navigating complexities) is very different from the position I took before (programming useless applications). By putting purpose in the middle, we are forced to find a way and that’s how we discover helpful technology, or build some.
+
+The enthusiastic spread of data science, therefore, is very welcome. The availability of data and open source code means, for anyone who has a question, that there are effective and free tools to start exploring and to acquire understanding and wisdom. The promise of information technology, is not a dark future, in which Artificial Intelligence takes control of our life and only the wealthy, high IQ elite survive. The promise of technology is a future where we have understood and alleviated our (currently broken) relationship with nature and people, so we can all have a good life.
+
+
 
