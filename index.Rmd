@@ -4,7 +4,35 @@ title: ''
 
 ```{r, echo=FALSE}
 library(wordcloud2)
-wordcloud2(demoFreq, size = 1,shape = 'star', clickFunction = "function(item, dimension, event) {
+library(dplyr)
+library(assertthat)
+
+# Load work and tag datasets and join them together
+works <- read.csv("work.csv")
+tags <- read.csv("tag.csv")
+work_data <- inner_join(works, tags, by = c("id" = "work_id"))
+assert_that(nrow(work_data) == nrow(tags))
+see_if(noNA(work_data))
+
+# convert all tags to lower case, 
+# group by tag and compute count, years and last_active
+tag_data <- work_data %>% 
+  mutate(tag = tolower(tag)) %>%
+  group_by(tag) %>%
+  summarise(count = n(), 
+            years = (max(end_year) - min(start_year) + 1),
+            last_active = max(end_year))
+
+# build data for the wordcloud
+wc_data <- tag_data %>%
+  mutate(word = tag, 
+         freq = log1p(count) * dense_rank(years) * min_rank(last_active)) %>%
+  select(word, freq)
+
+
+wordcloud2(wc_data, size = 1, shape = 'diamond', 
+           minRotation = 0, maxRotation = 0,
+clickFunction = "function(item, dimension, event) {
   // generate relative url based on the word clicked
   word = item[0];
   window.location.href = '/' + word + '.html';

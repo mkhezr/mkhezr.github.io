@@ -1,0 +1,87 @@
+work_id,tag
+1,script editing 
+1,translation
+2,data journalism
+2,storytelling
+2,data collection
+2,exploratory data analysis
+2,R
+2,visualization
+2,active citizenship
+2,fashion industry
+3,data journalism
+3,data science
+3,storytelling
+3,data collection
+3,exploratory data analysis
+3,R
+3,visualization
+3,active citizenship
+3,beauty industry
+3,data science
+4,data collection
+4,data journalism
+4,storytelling
+4,Social network analysis
+4,exploratory data analysis
+4,community detection
+4,community
+4,seed set expansion
+4,R
+4,visualization
+4,active citizenship
+4,data science
+4,fashion industry
+5,api design
+5,database design
+5,cloud based
+5,Java
+5,information modeling
+5,software design
+5,mentorship
+5,team process 
+5,agile development
+5,solution research
+6,interview
+8,Business Intelligence
+8,Java
+8,Haskel
+8,database design
+8,information modeling
+8,software design
+8,solution research
+8,team building
+8,api design
+8,agile development
+8,startup
+8,Corporation
+8,Web Application Development
+9,database design
+9,software design
+9,agile development
+9,Java
+9,Ruby
+9,team building
+9,startup
+9,Food industry
+9,api design
+9,Web Application Development
+10,Business Intelligence
+10,Java
+10,Corporation
+10,solution research
+10,Web Application Development
+11,SVM
+11,software design
+11,python
+11,startup
+11,solution research
+12,poems
+12,voice
+13,Community
+13,voice
+14,voice
+7,language
+7,community
+15,community
+15,storytelling
