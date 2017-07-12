@@ -25,7 +25,7 @@ tag_data <- work_data %>%
 # build data for the wordcloud
 wc_data <- tag_data %>%
   mutate(word = tag, 
-         freq = log1p(count) * dense_rank(years) * min_rank(last_active)) %>%
+         freq = log1p(count * dense_rank(years) * min_rank(last_active))) %>%
   select(word, freq)
 
 ```
@@ -33,7 +33,7 @@ wc_data <- tag_data %>%
 
 ```{r, echo = FALSE, warning=FALSE}
 library(wordcloud2)
-wordcloud2(wc_data, size = 1, shape = "pentagon", 
+wordcloud2(wc_data, size = .3, shape = "diamond", 
            minRotation = 0, maxRotation = 0,
            gridSize = 10,
            fontWeight = "normal",
