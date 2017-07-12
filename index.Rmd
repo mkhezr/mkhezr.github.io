@@ -2,8 +2,7 @@
 title: ''
 ---
 
-```{r, echo=FALSE}
-library(wordcloud2)
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 library(dplyr)
 library(assertthat)
 
@@ -29,7 +28,9 @@ wc_data <- tag_data %>%
          freq = log1p(count) * dense_rank(years) * min_rank(last_active)) %>%
   select(word, freq)
 
-
+```
+```{r, echo = FALSE, warning=FALSE}
+library(wordcloud2)
 wordcloud2(wc_data, size = 1, shape = 'diamond', 
            minRotation = 0, maxRotation = 0,
 clickFunction = "function(item, dimension, event) {
