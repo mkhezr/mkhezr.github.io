@@ -29,10 +29,16 @@ wc_data <- tag_data %>%
   select(word, freq)
 
 ```
+
+
 ```{r, echo = FALSE, warning=FALSE}
 library(wordcloud2)
-wordcloud2(wc_data, size = 1, shape = 'diamond', 
+wordcloud2(wc_data, size = 1, shape = "pentagon", 
            minRotation = 0, maxRotation = 0,
+           gridSize = 10,
+           fontWeight = "normal",
+           color = "black",
+           shuffle = FALSE,
 clickFunction = "function(item, dimension, event) {
   // generate relative url based on the word clicked
   word = item[0];
