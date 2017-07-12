@@ -52,10 +52,11 @@ wc_data <- tag_data %>%
 library(wordcloud2)
 wordcloud2(wc_data, size = .3, shape = "diamond", 
            minRotation = 0, maxRotation = 0,
-           gridSize = 10,
+           gridSize = 20,
            fontWeight = "normal",
            color = "black",
            shuffle = FALSE,
+           widgetsize = c(940, 580),
 clickFunction = "function(item, dimension, event) {
   // generate relative url based on the word clicked
   word = item[0];
