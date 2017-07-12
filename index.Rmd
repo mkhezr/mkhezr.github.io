@@ -5,6 +5,23 @@ title: ''
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 library(dplyr)
 library(assertthat)
+library(googlesheets)
+
+# Download work data from google sheets.
+works_sheet <- gs_title("works")
+
+if(works_sheet$updated > file.mtime("work.csv")){
+  #updating work.csv
+  works_sheet %>%
+    gs_download(ws = "work", to = "work.csv", overwrite = TRUE)   
+}
+
+if(works_sheet$updated > file.mtime("tag.csv")){
+  # updating tag.csv
+  works_sheet %>%
+    gs_download(ws = "tag", to = "tag.csv", overwrite = TRUE)  
+} 
+
 
 # Load work and tag datasets and join them together
 works <- read.csv("work.csv")
