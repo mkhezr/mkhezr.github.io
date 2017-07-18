@@ -100,6 +100,58 @@ button.code-folding-btn:focus {
 </style>
 
 
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
 
 <div class="container-fluid main-container">
 
@@ -116,14 +168,32 @@ $(document).ready(function () {
 
 
 
-<div id="menu">
-  <div id="menuItems">
-    <a class="menuItem" href="index.html">Home</a>
-    <a class="menuItem" href="work.html">Work</a>
-    <a class="menuItem" href="about.html">About</a>
-    <a class="menuItem" href="contact.html">Contact</a>
-  </div>
-</div>
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Maryam Khezrzadeh</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="work.html">Work</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
 
 <div class="fluid-row" id="header">
 
@@ -133,8 +203,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="htmlwidget-cec361569e3c4db17112" style="width:940px;height:580px;" class="wordcloud2 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cec361569e3c4db17112">{"x":{"word":["agile development","api design","beauty industry","community","community detection","data collection","data journalism","data science","database design","exploratory data analysis","fashion industry","food industry","information modeling","interview","java","mentorship","poems","python","r","script editing ","seed set expansion","social network analysis","software design","solution research","storytelling","svm","team building","team process ","translation","visualization","voice","web application development"],"freq":[4.97673374242057,4.97673374242057,2.07944154167984,4.57471097850338,2.19722457733622,3.89182029811063,3.89182029811063,3.89182029811063,4.97673374242057,3.89182029811063,2.83321334405622,1.94591014905531,4.39444915467244,1.6094379124341,5.41610040220442,2.83321334405622,3.49650756146648,0.693147180559945,3.89182029811063,2.19722457733622,2.19722457733622,2.19722457733622,5.41610040220442,5.41610040220442,4.57471097850338,0.693147180559945,3.49650756146648,2.83321334405622,2.19722457733622,3.89182029811063,5.26269018890489,4.29045944114839],"fontFamily":"Segoe UI","fontWeight":"normal","color":"black","minSize":0,"weightFactor":9.97027307285909,"backgroundColor":"white","gridSize":20,"minRotation":0,"maxRotation":0,"shuffle":false,"rotateRatio":0.4,"shape":"diamond","ellipticity":0.65,"figBase64":null,"hover":null,"click":"function(item, dimension, event) {\n  // generate relative url based on the word clicked\n  word = item[0];\n  window.location.href = '/' + word + '.html';\n  }"},"evals":["click"],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                        window.location.reload();\n                        iii = False;\n\n                        }\n}","data":null}]}}</script>
+<div id="htmlwidget-67bbdb9f12a4d0b21ff4" style="width:940px;height:580px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-67bbdb9f12a4d0b21ff4">{"x":{"word":["agile development","api design","beauty industry","community","community detection","data collection","data journalism","data science","database design","exploratory data analysis","fashion industry","food industry","information modeling","interview","java","mentorship","poems","python","r","script editing ","seed set expansion","social network analysis","software design","solution research","storytelling","svm","team building","team process ","translation","visualization","voice","web application development"],"freq":[4.97673374242057,4.97673374242057,2.07944154167984,4.57471097850338,2.19722457733622,3.89182029811063,3.89182029811063,3.89182029811063,4.97673374242057,3.89182029811063,2.83321334405622,1.94591014905531,4.39444915467244,1.6094379124341,5.41610040220442,2.83321334405622,3.49650756146648,0.693147180559945,3.89182029811063,2.19722457733622,2.19722457733622,2.19722457733622,5.41610040220442,5.41610040220442,4.57471097850338,0.693147180559945,3.49650756146648,2.83321334405622,2.19722457733622,3.89182029811063,5.26269018890489,4.29045944114839],"fontFamily":"Segoe UI","fontWeight":"normal","color":"black","minSize":0,"weightFactor":9.97027307285909,"backgroundColor":"white","gridSize":20,"minRotation":0,"maxRotation":0,"shuffle":false,"rotateRatio":0.4,"shape":"diamond","ellipticity":0.65,"figBase64":null,"hover":null,"click":"function(item, dimension, event) {\n  // generate relative url based on the word clicked\n  word = item[0];\n  window.location.href = '/' + word + '.html';\n  }"},"evals":["click"],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                        window.location.reload();\n                        iii = False;\n\n                        }\n}","data":null}]}}</script>
 
 
 
