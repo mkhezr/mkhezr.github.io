@@ -1,13 +1,29 @@
+
 ---
-title: ""
+title: "Maryam Khezrzadeh"
 ---
 To some things I find it hard to give a name. Like myself. Am I a software engineer, a “data scientist”, a poet? 
 
-I have a masters degree in Computer Science with a focus on Data Mining and AI. Not knowing how software and life combine, however, I left my tech job two years ago to become a writer. At the time I thought I would be leaving it all behind. Looking back now, I realize I’ve only been drawn closer to technology in ways I couldn’t imagine before. 
+I have a masters degree in Computer Science with a focus on Data Mining and Artificial Intelligence. Not knowing how software and life combine, however, I left my tech job two years ago to become a writer. At the time I thought I would be leaving it all behind. Looking back now, I realize I’ve only been drawn closer to technology in ways I couldn’t imagine before. 
 
-Today, I think of computers as tools which can help us navigate this complex life we all live. This position of making use of a computer to accomplish a purpose (navigating complexities) is very different from the position I took before (programming useless applications). By putting purpose in the middle, we are forced to find a way and that’s how we discover helpful technology, or build some.
+Today, I think of computers as tools which can help us navigate this complex life we all live. This position of making use of a computer to accomplish a purpose (navigating complexities) is very different from the position I took before (programming useless applications). By putting purpose at the center, we are forced to find a way forward. Purpose guides us to discover helpful technology, or build some.
 
-The enthusiastic spread of data science, therefore, is very welcome. The availability of data and open source code means, for anyone who has a question, that there are effective and free tools to start exploring and to acquire understanding and wisdom. The promise of information technology, is not a dark future, in which Artificial Intelligence takes control of our life and only the wealthy, high IQ elite survive. The promise of technology is a future where we have understood and alleviated our (currently broken) relationship with nature and people, so we can all have a good life.
+###__My Purpose__
+
+My purpose is to live a good life. It sounds deceptively naive I know, but all complexities and sophistications arise from the simple wishes of our heart. What is a good life after all? A good human life is one in which we have good food to sustain our bodies, we have enough time to reflect and make sense of the world and we have people to help us and be with us. 
+
+Having these simple needs in mind, I look at the world around me. A realistic glance, and I see a broken food system, a broken economy in which time is a luxury only for those who can afford it, and a torn down social fabric leaving people isolated, vulnerable and depressed. Living a good life has never been an easy task, but it feels exceedingly complicated these days; even for us, the residents of the first world who enjoy luxuries most other humans have never known. 
+
+Things are changing now as we understand the limitations of the systems we have built. We are reimagining these systems. We are talking about possibilities. We are aiming for love and justice. And I want to be a part of this change.
+
+###__My Toolbox__
+
+I’m a new kind of story teller. New in the sense that I write programs to observe facts and apply statistical analysis to make sense of what I see. I communicate through digital visualizations and of course through human language. I’m fascinated by language as key to understanding who we really are and as the main vessel of change. I employ text analysis to study companies, organizations and individuals through their use of language.
+
+I find that networks, as models of how people and things are connected, sit at the heart of discussions about effective action. Networks provide a framework for understanding social structures and how different kinds of structures confer different benefits; as such, they can facilitate and focus our conversations about what needs to be done. I use social network analysis to gain insights into communities.
+
+During my years of working at big and small tech companies around Vancouver, I have learned how to design, build and test software systems. I enjoy data/information modeling and database design. I’m good at desiging APIs, architecting an end-to-end software system or understanding/extending/redesigning existing ones. I take an iterative, test-first approach to development and am keen on clear, written communication. 
+
 
 
 

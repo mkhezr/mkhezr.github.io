@@ -1,0 +1,20 @@
+#get_in_touch .logo{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+
+  margin: 0 8px;
+}
+#get_in_touch .logo.twitter {
+  background-image: url(../images/twitterLogo.png);
+}
+#get_in_touch .logo.medium {
+  background-image: url(../images/mediumLogo.png);
+}
+#get_in_touch .logo.gmail {
+  background-image: url("../images/gmailLogo.png");
+}

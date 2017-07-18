@@ -1,0 +1,16 @@
+---
+output: html_document
+---
+
+![](images/companies.png "Voyage to the moon")
+
+### __Toxic Beauty - a data story__
+Toxic Beauty is an investigation into the use of harmful chemicals in beauty and personal care products. In this study, I analyze ingredients used by 1600 different brands. The analysis reveals a particular landscape of the beauty industry and is an invitation to know more and to choose wiser. 
+
+![](images/mediumLogo.png){ width=25 height=20px}
+[Read the Article](https://medium.com/think-dirty/toxic-beauty-a-data-story-283270f111cf)
+
+
+[Get the Code](https://github.com/mkhezr)
+
+[See the Report](https://github.com/mkhezr)

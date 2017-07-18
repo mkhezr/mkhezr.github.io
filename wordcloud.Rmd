@@ -1,0 +1,65 @@
+---
+title: ''
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+library(dplyr)
+library(assertthat)
+library(googlesheets)
+
+# Download work data from google sheets.
+works_sheet <- gs_title("works")
+
+if(works_sheet$updated > file.mtime("work.csv")){
+  #updating work.csv
+  works_sheet %>%
+    gs_download(ws = "work", to = "work.csv", overwrite = TRUE)   
+}
+
+if(works_sheet$updated > file.mtime("tag.csv")){
+  # updating tag.csv
+  works_sheet %>%
+    gs_download(ws = "tag", to = "tag.csv", overwrite = TRUE)  
+} 
+
+
+# Load work and tag datasets and join them together
+works <- read.csv("work.csv")
+tags <- read.csv("tag.csv")
+work_data <- inner_join(works, tags, by = c("id" = "work_id"))
+assert_that(nrow(work_data) == nrow(tags))
+see_if(noNA(work_data))
+
+# convert all tags to lower case, 
+# group by tag and compute count, years and last_active
+tag_data <- work_data %>% 
+  mutate(tag = tolower(tag)) %>%
+  group_by(tag) %>%
+  summarise(count = n(), 
+            years = (max(end_year) - min(start_year) + 1),
+            last_active = max(end_year))
+
+# build data for the wordcloud
+wc_data <- tag_data %>%
+  mutate(word = tag, 
+         freq = log1p(count * dense_rank(years) * min_rank(last_active))) %>%
+  select(word, freq)
+
+```
+
+
+```{r, echo = FALSE, warning=FALSE}
+library(wordcloud2)
+wordcloud2(wc_data, size = .3, shape = "diamond", 
+           minRotation = 0, maxRotation = 0,
+           gridSize = 20,
+           fontWeight = "normal",
+           color = "black",
+           shuffle = FALSE,
+           widgetsize = c(940, 580),
+clickFunction = "function(item, dimension, event) {
+  // generate relative url based on the word clicked
+  word = item[0];
+  window.location.href = '/' + word + '.html';
+  }")
+```
