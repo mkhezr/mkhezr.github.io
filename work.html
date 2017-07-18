@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
@@ -110,11 +113,112 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 <div id="menu">
   <div id="menuItems">
+    <a class="menuItem" href="index.html">Home</a>
     <a class="menuItem" href="work.html">Work</a>
-    <a class="menuItem" href="news.html">News</a>
     <a class="menuItem" href="about.html">About</a>
     <a class="menuItem" href="contact.html">Contact</a>
   </div>
@@ -128,16 +232,40 @@ $(document).ready(function () {
 </div>
 
 
+<div id="data-stories" class="section level2">
+<h2>Data Stories</h2>
 <div class="figure">
 <img src="images/companies.png" title="Voyage to the moon" />
 
 </div>
-<div id="toxic-beauty---a-data-story" class="section level3">
-<h3><strong>Toxic Beauty - a data story</strong></h3>
+<div id="toxic-beauty" class="section level3">
+<h3><strong>Toxic Beauty</strong></h3>
+<p>Toxic Beauty is an investigation into the use of harmful chemicals in beauty and personal care products. In this study, I analyze ingredients used by 1600 different brands. The analysis reveals a particular landscape of the beauty industry and is an invitation to know more and to choose wiser.</p>
+<p><img src="images/mediumLogo.png" width="25" height="20" /> <a href="https://medium.com/think-dirty/toxic-beauty-a-data-story-283270f111cf">Read the Article</a></p>
+<p><img src="images/githubLogo.png" width="25" height="20" /> <a href="https://github.com/mkhezr">Get the Code</a></p>
+<p><a href="https://github.com/mkhezr">See the Report</a></p>
+</div>
+<div id="plastic-fashion" class="section level3">
+<h3><strong>Plastic Fashion</strong></h3>
+<p>Fashion industry is a top contributer to climate change. Moreover, a lack of transparency in the fashion supply chain, makes a fertile soil for modern slavery to grow. In this study I compare two groups of fashion brands. I look for indicators that would tell us if these brands are doing the right thing to address the environmental and social issues associated with their businesses.</p>
+<p><img src="images/mediumLogo.png" width="25" height="20" /> <a href="https://medium.com/@mkhezr/plastic-fashion-a-data-story-4c65ff6efc36">Read the Article</a></p>
+</div>
+<div id="fabric-of-community" class="section level3">
+<h3><strong>Fabric of Community</strong></h3>
+<p>A continued investation into the fashion industry, Fabric of Community is a story about the many bright minds and kind hearts who have chosen fashion as a force for good. These individuals and collectives are helping build local economies. They are redefining the roll of business in society and are using fashion to convery the message of sustainability and social justice. In this study, I analyze the social network of fashion brands to reveal intersting connections.</p>
+</div>
+</div>
+<div id="five-minute-conversations" class="section level2">
+<h2>Five Minute Conversations</h2>
+<div id="tod-sieling" class="section level3">
+<h3><strong>Tod Sieling</strong></h3>
+</div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
