@@ -1,35 +1,26 @@
 ---
 output:
-  html_document
-    
+  html_document:
+    includes:
+      before_body: work_toc.html
 ---
-## Data Stories
 
-![](images/companies.png "Voyage to the moon")
+These are all the separte html pages for each work:
+[work_toxic_beauty.html](work_toxic_beauty.html)  
+[work_plastic_fashion.html](work_plastic_fashion.html)  
+[work_fabric_of_community.html](work_fabric_of_community.html)  
+[work_todd_sieling.html](work_todd_sieling.html)
 
-### __Toxic Beauty__
-Toxic Beauty is an investigation into the use of harmful chemicals in beauty and personal care products. In this study, I analyze ingredients used by 1600 different brands. The analysis reveals a particular landscape of the beauty industry and is an invitation to know more and to choose wiser. 
 
-![](images/mediumLogo.png){ width=25 height=20px}
-[Read the Article](https://medium.com/think-dirty/toxic-beauty-a-data-story-283270f111cf)
+I understand we have two ways to put all this together:
 
-![](images/githubLogo.png){width=25 height=20px}
-[Get the Code](https://github.com/mkhezr)
+1. every work page contains the toc.
+2. only work.html (this page) contains the toc. When a link is clicked the 
+  content of the relevant work will be loaded in this page. For this to work, 
+  I imagine we need a placeholder (a div?) for work content. 
+  
+####__TODO for Arian:__
 
-[See the Report](https://github.com/mkhezr)
-
-### __Plastic Fashion__
-Fashion industry is a top contributer to climate change. Moreover, a lack of transparency in the fashion supply chain, makes a fertile soil for modern slavery to grow. In this study I compare two groups of fashion brands. I look for indicators that would tell us if these brands are doing the right thing to address the environmental and social issues associated with their businesses. 
-
-![](images/mediumLogo.png){ width=25 height=20px}
-[Read the Article](https://medium.com/@mkhezr/plastic-fashion-a-data-story-4c65ff6efc36)
-
-### __Fabric of Community__
-A continued investation into the fashion industry, Fabric of Community is a story about the many bright minds and kind hearts who have chosen fashion as a force for good. These individuals and collectives are helping build local economies. They are redefining the roll of business in society and are using fashion to convery the message of sustainability and social justice. In this study, I analyze the social network of fashion brands to reveal intersting connections. 
-
-_Coming soon._
-
-## Five Minute Conversations
-### __Tod Sieling__
-
-_Coming soon._
+Decide which approach described above is better and let Maryam know. 
+(I personally think #2 makes more sense, but you know better and I like to hear 
+your opinion.)
