@@ -1,4 +1,6 @@
 ---
+output:
+  html_document
 ---
 
 ### __Hello__
@@ -6,13 +8,9 @@ I am a researcher and a data story teller originally from Iran and currently bas
 
 When I’m not investigating a new question or writing about it, I enjoy throwing some kicks in teakwondo class, writing poems, interviewing people, and reading ancient books.
 
-### __Get In Touch__ {#get_in_touch}
+### __Get In Touch__
 I am looking for collaborations and always enjoy a good conversation. currently I’m mostly interested in story telling through data visualization, word analysis and community detection. 
 
-<!--html_preserve-->
-<div id="logos">
-<a class="logo gmail" href="mailto:maryam.khezrzadeh@gmail.com"></a>
-<a class="logo medium" href="https://medium.com/@mkhezr"></a>
-<a class="logo twitter" href="https://twitter.com/mkhezr"></a>
-</div>
-<!--/html_preserve-->
+[Gmail]("mailto:maryam.khezrzadeh@gmail.com")  
+[Medium]("https://medium.com/@mkhezr")  
+[Twitter]("https://twitter.com/mkhezr")

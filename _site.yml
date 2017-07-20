@@ -1,14 +1,7 @@
 name: "my-website"
 output_dir: "."
-navbar:
-  title: Maryam Khezrzadeh
-  left: 
-    - text: "Work"
-      href: work.html
-    - text: "About"
-      href: about.html
+
 output:
   html_document:
-    theme: cosmo
-    highlight: textmate
-    css: css/styles.css
+    theme: null
+      
