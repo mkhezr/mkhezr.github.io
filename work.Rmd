@@ -1,11 +1,21 @@
 ---
 output:
-  html_document:
-    includes:
-      before_body: work_toc.html
+  html_document
 ---
 
-These are all the separte html pages for each work:
+Here is the Table of Content (toc):
+
+* Data Stories
+    + [Toxic Beauty](work_toxic_beauty.html)
+    + [Plastic Fashion](work_plastic_fashion.html)
+    + [Fabric of Community](work_fabric_of_community.html)
+* Five Minute Conversations
+    + [Todd Sieling](work_todd_sieling.html)
+    
+<div id="work">
+</div>
+
+And these are all the separte html pages for each work:  
 [work_toxic_beauty.html](work_toxic_beauty.html)  
 [work_plastic_fashion.html](work_plastic_fashion.html)  
 [work_fabric_of_community.html](work_fabric_of_community.html)  
@@ -23,4 +33,4 @@ I understand we have two ways to put all this together:
 
 Decide which approach described above is better and let Maryam know. 
 (I personally think #2 makes more sense, but you know better and I like to hear 
-your opinion.)
+your opinion. I have included an emoty `<div id="work"></div>` in this html for now.)

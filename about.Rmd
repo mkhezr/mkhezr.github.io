@@ -1,6 +1,5 @@
 ---
 ---
-## {.tabset}
 ###__About Me__
 To some things I find it hard to give a name. Like myself. Am I a software engineer, a “data scientist”, a poet? 
 
