@@ -1,9 +1,0 @@
-name: "my-website"
-output_dir: "."
-
-output:
-  html_document:
-    theme: null
-    include:
-      before_body: include_header.html
-    css: css/styles.css

@@ -1,9 +1,0 @@
----
-output: 
-  html_fragment
----
-### __Plastic Fashion__
-Fashion industry is a top contributer to climate change. Moreover, a lack of transparency in the fashion supply chain, makes a fertile soil for modern slavery to grow. In this study I compare two groups of fashion brands. I look for indicators that would tell us if these brands are doing the right thing to address the environmental and social issues associated with their businesses. 
-
-![](images/mediumLogo.png)
-[Read the Article](https://medium.com/@mkhezr/plastic-fashion-a-data-story-4c65ff6efc36)
