@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-248.000000, -664.000000)">
+            <g id="Group-4" transform="translate(270.000000, 686.000000) rotate(-180.000000) translate(-270.000000, -686.000000) translate(248.000000, 664.000000)">
+                <circle id="Oval-2" fill="#72DBB1" cx="22.1236512" cy="22.1236512" r="21.3619042"></circle>
+                <g id="Group-3" transform="translate(9.406929, 11.758661)" fill="#FFFFFF">
+                    <rect id="Rectangle-2" transform="translate(19.196091, 6.261564) rotate(-315.000000) translate(-19.196091, -6.261564) " x="12.1387962" y="4.46367021" width="14.1145898" height="3.59578729" rx="1.79789364"></rect>
+                    <rect id="Rectangle-2" transform="translate(19.196091, 14.492627) rotate(-45.000000) translate(-19.196091, -14.492627) " x="12.1387962" y="12.694733" width="14.1145898" height="3.59578729" rx="1.79789364"></rect>
+                    <rect id="Rectangle-2" x="0.647900882" y="8.23106278" width="24.1376429" height="3.59578729" rx="1.79789364"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
