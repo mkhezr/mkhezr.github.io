@@ -6,3 +6,4 @@ output:
     theme: null
     include:
       before_body: include_header.html
+    css: css/styles.css
