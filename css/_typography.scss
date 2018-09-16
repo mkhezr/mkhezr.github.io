@@ -1,1 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Noto+Sans:400,700|Playfair+Display:700|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Noto Sans', sans-serif;
+  font-size: 19px;
+  @media #{$mobile} {
+    font-size: 17px;
+  }
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Goudy Bookletter 1911', serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 38px;
+	margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  @media #{$mobile} {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+}
+
+a {
+  color: $peachy-red;
+  &:visited {
+    color: $peachy-red;
+  }
+  &:hover {
+  	color: teal;
+  }
+}
+
+
+
+p {
+	margin-top: 8px;
+  font-size: 19px;
+  line-height: 1.5em;
+
+  @media #{$mobile} {
+    font-size: 17px;
+  }
+}

@@ -1,7 +1,62 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700|Noto+Sans:400,700|Playfair+Display:700|Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911");
 *, *:after, *:before {
   box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 19px;
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+}
+
+a {
+  color: #E56B6A;
+}
+a:visited {
+  color: #E56B6A;
+}
+a:hover {
+  color: teal;
+}
+
+p {
+  margin-top: 8px;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+@media (max-width: 767px) {
+  p {
+    font-size: 17px;
+  }
 }
 
 @keyframes fadein {
@@ -14,24 +69,34 @@
 }
 body {
   margin: 0;
-  color: rgba(1, 1, 1, 0.8);
-  font-family: "Lato", sans-serif;
-  font-size: 19px;
-  -webkit-font-smoothing: antialiased;
+  color: #222;
   -moz-osx-font-smoothing: grayscale;
-  /*@media (min-width: 768px) and (max-width: 1023px) {
-    background-color: orange;
-  }
-
-  @media (min-width: 1024px) {
-    background-color: $peachy-red;
-  }*/
 }
-@media (max-width: 767px) {
-  body {
-    font-size: 17px;
-    /*background-color: yellow;*/
-  }
+
+.section {
+  max-width: 960px;
+  margin: auto;
+  /*overflow: hidden;*/
+}
+.section .section-content {
+  display: flex;
+}
+.section .description {
+  /*max-width: 540px;*/
+}
+.section .media {
+  margin-top: 18px;
+}
+
+.section-intro {
+  display: flex;
+}
+.section-intro .portrait {
+  width: 320px;
+  height: 320px;
+}
+.section-intro .description {
+  margin-left: 32px;
 }
 
 .block-quote {
@@ -84,25 +149,6 @@ span.emphasis {
   font-weight: 700;
 }
 
-a {
-  color: #E56B6A;
-}
-a:visited {
-  color: #E56B6A;
-}
-
-h3 {
-  font-size: 28px;
-  margin-bottom: 0px;
-  margin-top: 30px;
-}
-@media (max-width: 767px) {
-  h3 {
-    font-size: 22px;
-    margin-top: 15px;
-  }
-}
-
 .main-container {
   background-color: white;
   display: flex;
@@ -121,12 +167,15 @@ h3 {
   font-family: "Noto Sans", sans-serif;
   margin-bottom: 10px;
   padding: 6vw 8vw 0 8vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .nav .word-mark {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: -3px;
 }
 @media (max-width: 767px) {
   .nav .word-mark {
@@ -134,7 +183,7 @@ h3 {
   }
 }
 .nav .word-mark a {
-  color: rgba(1, 1, 1, 0.8);
+  color: #222;
   text-decoration: none;
 }
 .nav .menuItems {
@@ -143,11 +192,10 @@ h3 {
 }
 .nav .menuItem {
   display: block;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 300;
   text-decoration: none;
-  color: #E56B6A;
-  width: 80px;
+  /*color: $peachy-red;*/
   padding-right: 30px;
   margin: 0px;
 }
@@ -211,8 +259,8 @@ h3 {
 }
 
 .content-primary {
-  width: 600px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 16px;
   animation: fadein 0.5s;
   transition: opacity 0.4s ease, margin-left 0.3s ease;
 }
@@ -224,10 +272,6 @@ h3 {
 .mobile-nav-open .content-primary {
   margin-left: -85vw;
   opacity: 0.3;
-}
-
-.content-primary > * {
-  max-width: 100%;
 }
 
 .figure > img {
