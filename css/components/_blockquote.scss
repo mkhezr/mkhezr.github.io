@@ -1,0 +1,43 @@
+.block-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 30px;
+  &:before {
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    content: '“';
+    font-family: 'Playfair Display', serif;
+    /*font-family: 'Slabo 27px', serif;*/
+    color: $peachy-red;
+    font-size: 60px;
+    @media #{$mobile} {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Slabo 27px', serif;
+    font-size: 22px;
+    padding-left: 30px;
+    @media #{$mobile} {
+      font-size: 17px;
+    }
+  }
+
+  .author {
+    position: relative;
+    text-align: right;
+    color: $peachy-red;
+    font-size: 18px;
+    font-weight: 700;
+    &:before {
+      position: absolute;
+      left: -5px;
+      /*content: '—';*/
+    }
+  }
+}

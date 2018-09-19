@@ -3,17 +3,19 @@
     to   { opacity: 1; }
 }
 
+html {
+	font-size: 100%;
+}
+
 body {
   margin: 0;
   color: $text-color-dark;
   -moz-osx-font-smoothing: grayscale;
-
-  
 }
 
 .section {
-	max-width: 960px;
 	margin: auto;
+	margin-top: 64px;
 	/*overflow: hidden;*/
 	.section-content {
 		display: flex; 
@@ -26,7 +28,7 @@ body {
 	}
 }
 
-.section-intro {
+.intro {
 	display: flex;
 	.portrait {
 		width: 320px;
@@ -37,61 +39,10 @@ body {
 	}
 }
 
-.block-quote {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  margin-top: 30px;
-  &:before {
-    position: absolute;
-    left: 0px;
-    top: -30px;
-    content: '“';
-    font-family: 'Playfair Display', serif;
-    /*font-family: 'Slabo 27px', serif;*/
-    color: $peachy-red;
-    font-size: 60px;
-    @media #{$mobile} {
-      font-size: 40px;
-    }
-  }
-
-  p {
-    /*font-family: 'Playfair Display', serif;*/
-    font-family: 'Slabo 27px', serif;
-    font-size: 22px;
-    padding-left: 30px;
-    @media #{$mobile} {
-      font-size: 17px;
-    }
-  }
-
-  .author {
-    position: relative;
-    text-align: right;
-    color: $peachy-red;
-    font-size: 18px;
-    font-weight: 700;
-    &:before {
-      position: absolute;
-      left: -5px;
-      /*content: '—';*/
-    }
-  }
-}
-
-span.emphasis {
-  font-weight: 700;
-}
-
-.main-container {
+main.content {
+  max-width: 62rem;
 	background-color: white;
-
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 
   transition: padding-right 0.2s ease;
 
@@ -103,26 +54,16 @@ span.emphasis {
 }
 
 .nav {
-	font-family: 'Noto Sans', sans-serif;
-  margin-bottom: 10px;
-  padding: 6vw 8vw 0 8vw;
+	/*font-family: 'Noto Sans', sans-serif;*/
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 
   .word-mark {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    @media #{$mobile} {
-      font-size: 30px;
-    }
     margin-top: 0px;
     margin-bottom: -3px;
-    a {
-      color: $text-color-dark;
-      text-decoration: none;
-    }
-
   }
 
   .menuItems {
@@ -151,19 +92,6 @@ span.emphasis {
   .mobile-nav-open & {
     margin-left: -85vw;
     opacity: 0.3;
-  }
-
-
-}
-
-.content {
-	padding: 0 8vw 8vw 8vw;
-  display: flex; 
-  @media #{$mobile} {
-    display: block;
-  }
-  .mobile-nav-open & {
-    overflow: hidden;
   }
 }
 
