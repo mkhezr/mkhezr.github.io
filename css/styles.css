@@ -1,12 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700|Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,500,700|Slabo+27px|Source+Sans+Pro:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:300,300i,700");
 *, *:after, *:before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Merriweather", serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -27,7 +28,7 @@ body {
   }
 }
 .word-mark a {
-  color: #13022C !important;
+  color: rgba(0, 0, 0, 0.72) !important;
   text-decoration: none;
 }
 
@@ -35,7 +36,7 @@ h1, h2, h3, h4 {
   font-family: "Lora", serif;
   /*font-family: 'Playfair Display', serif;*/
   letter-spacing: -0.01em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h1 {
@@ -94,41 +95,50 @@ html {
 
 body {
   margin: 0;
-  color: #13022C;
+  color: rgba(0, 0, 0, 0.72);
   -moz-osx-font-smoothing: grayscale;
+  background: #74ebd5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #cdf8f0, #fafafd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #cdf8f0, #fafafd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section {
   margin: auto;
-  margin-top: 64px;
-  /*overflow: hidden;*/
-}
-.section .section-content {
+  margin-top: 8rem;
   display: flex;
 }
-.section .description {
-  /*max-width: 540px;*/
+.section .section-right {
+  margin-left: 4rem;
 }
-.section .media {
-  margin-top: 18px;
+.section .section-right .media {
+  width: 420px;
+  height: 420px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
   display: flex;
 }
-.intro .portrait {
-  width: 320px;
-  height: 320px;
-}
 .intro .description {
-  margin-left: 32px;
+  margin-right: 2rem;
+}
+.intro .portrait {
+  width: 420px;
+  height: 420px;
+  margin-top: -8rem;
 }
 
 main.content {
   max-width: 62rem;
-  background-color: white;
+  /*background-color: white;*/
   margin: 0 auto;
   transition: padding-right 0.2s ease;
+  padding: 8rem 0;
 }
 main.content.mobile-nav-open {
   overflow: hidden;
@@ -138,7 +148,6 @@ main.content.mobile-nav-open {
 
 .nav {
   /*font-family: 'Noto Sans', sans-serif;*/
-  margin-top: 8rem;
   margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
@@ -151,6 +160,7 @@ main.content.mobile-nav-open {
 .nav .menuItems {
   display: flex;
   justify-content: flex-start;
+  display: none;
 }
 .nav .menuItem {
   display: block;

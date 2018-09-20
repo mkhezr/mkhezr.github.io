@@ -11,40 +11,52 @@ body {
   margin: 0;
   color: $text-color-dark;
   -moz-osx-font-smoothing: grayscale;
+  background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, lighten(#74ebd5, 20%), lighten(#ACB6E5, 20%));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, lighten(#74ebd5, 20%), lighten(#ACB6E5, 20%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section {
 	margin: auto;
-	margin-top: 64px;
-	/*overflow: hidden;*/
-	.section-content {
-		display: flex; 
+	margin-top: 8rem;
+	display: flex; 
+	
+	.section-left {
+
 	}
-	.description {
-		/*max-width: 540px;*/
-	}
-	.media {
-		margin-top: 18px;
+
+	.section-right {
+		margin-left: 4rem;
+		.media {
+			width: 420px;
+			height: 420px;
+			border-radius: 6px;
+	    overflow: hidden;
+	    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	  }
 	}
 }
 
 .intro {
 	display: flex;
-	.portrait {
-		width: 320px;
-		height: 320px;
-	}
 	.description {
-		margin-left: 32px;
+		margin-right: 2rem;
+	}
+	.portrait {
+		width: 420px;
+		height: 420px;
+		margin-top: -8rem;
 	}
 }
 
 main.content {
   max-width: 62rem;
-	background-color: white;
+	/*background-color: white;*/
   margin: 0 auto;
 
   transition: padding-right 0.2s ease;
+
+  padding: 8rem 0;
 
   &.mobile-nav-open {
     overflow: hidden;
@@ -55,7 +67,6 @@ main.content {
 
 .nav {
 	/*font-family: 'Noto Sans', sans-serif;*/
-  margin-top: 8rem;
   margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
@@ -69,6 +80,7 @@ main.content {
   .menuItems {
     display: flex;
     justify-content: flex-start;
+    display: none;
   }
 
   .menuItem {
@@ -85,7 +97,6 @@ main.content {
     margin: 0px;
     &.active {
       font-weight: 800;
-
     }
   }
 
