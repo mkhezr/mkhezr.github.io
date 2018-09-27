@@ -124,13 +124,15 @@ body {
 .intro {
   display: flex;
 }
-.intro .description {
-  margin-right: 2rem;
-}
 .intro .portrait {
-  width: 420px;
-  height: 420px;
-  margin-top: -8rem;
+  margin-right: 2rem;
+  /*border-radius: 50%;*/
+  object-fit: contain;
+  width: 620px;
+  height: 620px;
+  position: relative;
+  margin-left: -200px;
+  margin-top: -6rem;
 }
 
 main.content {
@@ -148,7 +150,7 @@ main.content.mobile-nav-open {
 
 .nav {
   /*font-family: 'Noto Sans', sans-serif;*/
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
