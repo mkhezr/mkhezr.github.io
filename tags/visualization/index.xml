@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on Maryam Khezrzadeh</title>
+    <link>/tags/visualization/</link>
+    <description>Recent content in Visualization on Maryam Khezrzadeh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 22 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Visible Mosaic</title>
+      <link>/post/the-visible-mosaic/</link>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-visible-mosaic/</guid>
+      <description> There are thousands of NGOs (None-Govermental Organization) and CSOs (Civil Society Organization) in BC. What are these organizations working on? How are they related? What can we learn from the current state of affairs, so we can amplify the positive things that are happening and we minimize the damage from the negative forces that are affecting our lives?
+ Read the Article  </description>
+    </item>
+    
+    <item>
+      <title>Plastic Fashion</title>
+      <link>/post/plastic-fashion/</link>
+      <pubDate>Fri, 07 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/plastic-fashion/</guid>
+      <description> Fashion industry is a top contributor to climate change. Moreover, a lack of transparency in the fashion supply chain, makes a fertile soil for modern slavery to grow. In this study I compare two groups of fashion brands. I look for indicators that would tell us if these brands are doing the right thing to address the environmental and social issues associated with their businesses.
+ Read the Article  </description>
+    </item>
+    
+    <item>
+      <title>Toxic Beauty</title>
+      <link>/post/toxic-beauty/</link>
+      <pubDate>Sun, 06 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/toxic-beauty/</guid>
+      <description> Toxic Beauty is an investigation into the use of harmful chemicals in beauty and personal care products. In this study, I analyze ingredients used by 1600 different brands. The analysis reveals a particular landscape of the beauty industry and is an invitation to know more and to choose wiser.
+ Read the Article  </description>
+    </item>
+    
+  </channel>
+</rss>
