@@ -12,8 +12,8 @@ body {
   color: $text-color-dark;
   -moz-osx-font-smoothing: grayscale;
   background: #74ebd5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, lighten(#74ebd5, 20%), lighten(#ACB6E5, 20%));  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, lighten(#74ebd5, 20%), lighten(#ACB6E5, 20%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to bottom, lighten(#74ebd5, 25%), lighten(#ACB6E5, 20%));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, lighten(#74ebd5, 25%), lighten(#ACB6E5, 20%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section {
