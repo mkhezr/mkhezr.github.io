@@ -56,19 +56,22 @@ h3 {
 }
 
 a {
-  color: $peachy-red;
+  /*color: $peachy-red;*/
+  color: $text-color-dark;
+  transition: color 0.2s ease;
   &:visited {
-    color: $peachy-red;
+    /*color: $peachy-red;*/
+    color: $text-color-dark;
   }
   &:hover {
-  	color: teal;
+  	/*color: $plum-purple;*/
   }
 }
 
 p {
 	margin-top: 8px;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   
   @media #{$mobile} {
     font-size: 16px;

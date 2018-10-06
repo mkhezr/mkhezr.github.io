@@ -1,0 +1,25 @@
+.podcast-list {
+	margin-top: 2rem;
+	padding-left: 0px;
+}
+
+.podcast-link {
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	display: block;
+	
+	.ep-no {
+		font-family: 'Lora', serif;
+		display: inline-block;
+	}
+	h2 {
+		border: 0px;
+		margin: 0px 8px;
+		display: inline-block;
+		font-size: 28px;
+		border-bottom: 1px solid $text-color-dark;
+	}	
+	p {
+		display: inline-block;
+	}	
+}
