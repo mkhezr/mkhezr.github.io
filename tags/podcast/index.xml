@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on Maryam Khezrzadeh</title>
+    <link>/tags/podcast/</link>
+    <description>Recent content in Podcast on Maryam Khezrzadeh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Future of Work</title>
+      <link>/post/future-of-work/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/future-of-work/</guid>
+      <description>We are all working these days, man and woman. And it seems like we are all wondering: how could work be better? How could it be more meaningful and satisfying? How could it be less tiring and more aligned with who we really are. And beyond that, how could we become who we are through our work?
+ This third episode of the podcast is about the future of work, which as you can imagine is closely related to the future of cities and the future of economy.</description>
+    </item>
+    
+    <item>
+      <title>Social Enterprises</title>
+      <link>/post/social-enterprises/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/social-enterprises/</guid>
+      <description>I’ve frequently talked about this one store in our neighbourhood that I really like. The reasons I like it go beyond good prices and the fact that it offers non-toxic products and soap refilling.
+The people here are good. And they are doing something important. So I decided to have a conversation with Elizabeth, the founder of Second Nature and I really hope you enjoy listening to it.
+This is only the second episode of Ten Minute Conversations and I really hope that you get a chance to send along your feedback on the podcast, either in person or on the digital :)</description>
+    </item>
+    
+    <item>
+      <title>The Future of Technology</title>
+      <link>/post/the-future-of-technology/</link>
+      <pubDate>Tue, 10 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-future-of-technology/</guid>
+      <description> A couple of months back, I asked Todd Sieling of Denim&amp;amp;Steel: “What is in the future of tech?”. Our initial conversation was very interesting so I followed up and asked the same question one more time. The result is a ten minute conversation that would challenge the dominant stories we often hear about the role of technology in our future.
+ Read the Article Listen to the Conversation   </description>
+    </item>
+    
+  </channel>
+</rss>

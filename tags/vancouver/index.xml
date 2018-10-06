@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vancouver on Maryam Khezrzadeh</title>
+    <link>/tags/vancouver/</link>
+    <description>Recent content in Vancouver on Maryam Khezrzadeh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vancouver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Future of Work</title>
+      <link>/post/future-of-work/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/future-of-work/</guid>
+      <description>We are all working these days, man and woman. And it seems like we are all wondering: how could work be better? How could it be more meaningful and satisfying? How could it be less tiring and more aligned with who we really are. And beyond that, how could we become who we are through our work?
+ This third episode of the podcast is about the future of work, which as you can imagine is closely related to the future of cities and the future of economy.</description>
+    </item>
+    
+  </channel>
+</rss>
