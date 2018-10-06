@@ -32,16 +32,24 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 35px;
-  margin-bottom: 8px; }
+  margin-bottom: 1rem;
+  margin-top: 8px; }
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 5px solid rgba(255, 255, 0, 0.4); }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 22px; } }
 
 h3 {
-  font-size: 28px;
-  margin-bottom: 0px;
-  margin-top: 30px; }
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 24px; }
   @media (max-width: 767px) {
     h3 {
-      font-size: 22px;
-      margin-top: 15px; } }
+      font-size: 22px; } }
 
 a {
   color: #e45c5b; }
@@ -59,7 +67,10 @@ p {
       font-size: 16px; } }
 
 p.focus {
-  font-size: 22px; }
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  font-weight: 500;
+  opacity: 0.9; }
   @media (max-width: 767px) {
     p.focus {
       font-size: 20px; } }
@@ -80,13 +91,13 @@ body {
   color: rgba(0, 0, 0, 0.72);
   -moz-osx-font-smoothing: grayscale;
   /*background: linear-gradient(to right, #b993d6, #8ca6db);*/
-  background: linear-gradient(to top, #f5d29e, #fbd3ff, #b3f0f5, #ffe4ac, #e7f7c2); }
+  background: linear-gradient(to top, #f5d29e, #fbd3ff, #b3f0f5); }
 
 main.content {
   max-width: 62rem;
   margin: 0 auto;
   transition: padding-right 0.2s ease;
-  /*padding: 8rem 0;*/ }
+  padding: 4rem 0; }
   main.content.mobile-nav-open {
     overflow: hidden;
     padding-right: 0px;
@@ -94,7 +105,6 @@ main.content {
 
 .nav {
   /*font-family: 'Noto Sans', sans-serif;*/
-  margin-bottom: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -141,13 +151,25 @@ main.content {
       overflow: hidden;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
 
+.section.three-column {
+  justify-content: space-between; }
+  .section.three-column .column {
+    width: 30%; }
+
+.section.divier {
+  padding: 2rem 0 0rem 0;
+  background-color: red; }
+
 .intro {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .intro .portrait {
     /*border-radius: 50%;*/
     object-fit: cover;
-    width: 32rem;
-    position: relative; }
+    width: 24rem;
+    height: 24rem;
+    position: relative;
+    border-radius: 100%; }
 
 #seeall {
   display: flex;
