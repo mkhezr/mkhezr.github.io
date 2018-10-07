@@ -153,6 +153,8 @@ main.content {
       border-radius: 6px;
       overflow: hidden;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
+      .section .section-right .media img {
+        width: 100%; }
 
 .section.three-column {
   justify-content: space-between; }
@@ -171,7 +173,8 @@ main.content {
     width: 24rem;
     height: 24rem;
     position: relative;
-    border-radius: 100%; }
+    border-radius: 100%;
+    box-shadow: 0px 0px 19px #73121230; }
 
 #seeall {
   display: flex;
