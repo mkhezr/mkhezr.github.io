@@ -38,7 +38,7 @@ main.content {
   align-items: flex-end;
   justify-content: space-between;
   /*background-color: yellow;*/
-  padding: 2rem 0;
+  padding: 0rem 0 2rem;
   border-bottom: 1px solid rgba(black, 0.2);
 
   @media #{$mobile} {
@@ -83,7 +83,7 @@ main.content {
 .section {
   display: flex; 
   margin: auto;
-  padding: 4rem 0;
+  padding: 3rem 0;
   /*border: 1px solid rgba(255, 0, 0, 1);
   background-color: rgba(255, 255, 0, 0.5);*/
   
@@ -372,17 +372,18 @@ main.content {
 .homepage {
   .contact-links {
     display: flex;
+    opacity: 0.8;
     a {
       display: block;
-      width: 36px;
-      height: 36px;
+      width: 24px;
+      height: 24px;
       background-size: 100% auto;
       background-repeat: no-repeat;
       background-position: center center;
       margin: 0px 16px 0px 0px;
 
-      &.gmail {
-        background-image: url('../images/gmailLogo.png');
+      &.email {
+        background-image: url('../images/email.png');
       }
       &.medium {
         background-image: url('../images/mediumLogo.png');

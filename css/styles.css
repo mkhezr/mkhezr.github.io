@@ -93,7 +93,7 @@ p {
 
 p.focus {
   font-family: "Lora", serif;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   opacity: 0.9;
 }
@@ -150,7 +150,7 @@ main.content.mobile-nav-open {
   align-items: flex-end;
   justify-content: space-between;
   /*background-color: yellow;*/
-  padding: 2rem 0;
+  padding: 0rem 0 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 767px) {
@@ -193,7 +193,7 @@ main.content.mobile-nav-open {
 .section {
   display: flex;
   margin: auto;
-  padding: 4rem 0;
+  padding: 3rem 0;
   /*border: 1px solid rgba(255, 0, 0, 1);
   background-color: rgba(255, 255, 0, 0.5);*/
 }
@@ -482,18 +482,19 @@ main.content.mobile-nav-open {
 
 .homepage .contact-links {
   display: flex;
+  opacity: 0.8;
 }
 .homepage .contact-links a {
   display: block;
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0px 16px 0px 0px;
 }
-.homepage .contact-links a.gmail {
-  background-image: url("../images/gmailLogo.png");
+.homepage .contact-links a.email {
+  background-image: url("../images/email.png");
 }
 .homepage .contact-links a.medium {
   background-image: url("../images/mediumLogo.png");
