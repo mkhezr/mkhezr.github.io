@@ -1,0 +1,44 @@
+.contact-links {
+  display: flex;
+
+  a {
+    opacity: 0.75;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px 16px 0px 0px;
+    transition: opacity 0.2s ease;
+    
+    
+
+    &.large {
+      width: 32px;
+      height: 32px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.email-link {
+      width: auto;
+      text-decoration: none;
+      background-position: left center;
+      background-size: 24px 16px;
+      padding-left: 32px;
+    }
+
+    &.email {
+      background-image: url('../images/email.png');
+    }
+    &.medium {
+      background-image: url('../images/mediumLogo.png');
+    }
+    &.twitter {
+      background-image: url('../images/twitterLogo.png');
+    }
+  }
+}

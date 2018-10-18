@@ -371,29 +371,6 @@ main.content {
               width: 100%;
               font-size: 26px; } }
 
-.homepage .contact-links {
-  display: flex;
-  opacity: 0.8; }
-  .homepage .contact-links a {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 0px 16px 0px 0px; }
-    .homepage .contact-links a.large {
-      width: 32px;
-      height: 32px; }
-    .homepage .contact-links a.email-link {
-      width: auto; }
-    .homepage .contact-links a.email {
-      background-image: url("../images/email.png"); }
-    .homepage .contact-links a.medium {
-      background-image: url("../images/mediumLogo.png"); }
-    .homepage .contact-links a.twitter {
-      background-image: url("../images/twitterLogo.png"); }
-
 .work-page .hero-image {
   margin-top: 20px;
   max-width: 100%; }
@@ -485,5 +462,35 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.72); }
   .podcast-link p {
     display: inline-block; }
+
+.contact-links {
+  display: flex; }
+  .contact-links a {
+    opacity: 0.75;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px 16px 0px 0px;
+    transition: opacity 0.2s ease; }
+    .contact-links a.large {
+      width: 32px;
+      height: 32px; }
+    .contact-links a:hover {
+      opacity: 1; }
+    .contact-links a.email-link {
+      width: auto;
+      text-decoration: none;
+      background-position: left center;
+      background-size: 24px 16px;
+      padding-left: 32px; }
+    .contact-links a.email {
+      background-image: url("../images/email.png"); }
+    .contact-links a.medium {
+      background-image: url("../images/mediumLogo.png"); }
+    .contact-links a.twitter {
+      background-image: url("../images/twitterLogo.png"); }
 
 /*# sourceMappingURL=styles.css.map */
