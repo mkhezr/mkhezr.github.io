@@ -3,6 +3,10 @@
     to   { opacity: 1; }
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 100%;
 }
@@ -110,9 +114,14 @@ main.content {
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    transition: box-shadow 0.05s linear;
     img {
       width: 100%;
       object-fit: cover;
+    }
+
+    &:hover {
+    	box-shadow: 0px 0px 25px #ffff8888;
     }
 
     @media #{$mobile} {
