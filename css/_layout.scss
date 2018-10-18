@@ -391,6 +391,16 @@ main.content {
       background-position: center center;
       margin: 0px 16px 0px 0px;
 
+      &.large {
+        width: 32px;
+        height: 32px;
+      }
+
+      &.email-link {
+        width: auto;
+
+      }
+
       &.email {
         background-image: url('../images/email.png');
       }
