@@ -140,7 +140,6 @@ main.content {
     @media #{$mobile} {
       width: 100%;
       height: auto;
-
     }
   }
 }
@@ -443,13 +442,13 @@ main.content {
 .mobile-only {
   display: none !important;
   @media #{$mobile} {
-    display: block;
+    display: block !important;
   }
 }
 
 .desktop-only {
-  display: block;
+  display: block !important;
   @media #{$mobile} {
-    display: none;
+    display: none !important;
   }
 }
