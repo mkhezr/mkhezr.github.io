@@ -85,7 +85,8 @@ p.focus {
   opacity: 0.9;
   
   @media #{$mobile} {
-    font-size: 20px;
+    font-size: 22px;
+    opacity: 1;
   }
 }
 

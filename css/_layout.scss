@@ -29,6 +29,10 @@ main.content {
     padding: 1rem 0.5rem;
   }
 
+  @media #{$tablet} {
+    padding: 1rem 0.5rem;
+  }
+
   &.mobile-nav-open {
     overflow: hidden;
     padding-right: 0px;
@@ -46,7 +50,7 @@ main.content {
   border-bottom: 1px solid rgba(black, 0.2);
 
   @media #{$mobile} {
-    padding: 1rem 0;
+    padding: 0 0 1rem;
   }
 
   .word-mark {
@@ -102,6 +106,10 @@ main.content {
 
 	.section-right {
 		margin-left: 4rem;
+
+		@media #{$tablet} {
+			margin-left: 2rem;
+		}
 		
     @media #{$mobile} {
       margin-left: 0rem;
@@ -121,7 +129,12 @@ main.content {
     }
 
     &:hover {
-    	box-shadow: 0px 0px 25px #ffff8888;
+    	box-shadow: 0px 0px 25px rgba(#ffff88, 0.5);
+    }
+
+    @media #{$tablet} {
+    	width: 24rem;
+    	height: 24rem;
     }
 
     @media #{$mobile} {
@@ -134,8 +147,15 @@ main.content {
 
 .section.three-column {
   justify-content: space-between;
+  @media #{$tablet} {
+  	flex-direction: column;
+  }
   .column {
     width: 30%;
+    @media #{$tablet} {
+    	width: 60%;
+    	margin-bottom: 2rem;
+    }
     @media #{$mobile} {
       width: 100%;
       margin-bottom: 1rem;
@@ -147,6 +167,7 @@ main.content {
   padding: 2rem 0 0rem 0;
   @media #{$mobile} {
     padding: 0;
+    display: block;
   }
 }
 
@@ -154,7 +175,7 @@ main.content {
 	display: flex;
   align-items: center;
 	.description {
-		
+
 	}
 	.portrait {
 		/*border-radius: 50%;*/
@@ -163,7 +184,13 @@ main.content {
     height: 24rem;
     position: relative;
     border-radius: 100%;
-    box-shadow: 0px 0px 19px #73121230;
+    box-shadow: 0px 0px 19px rgba(#731212, 0.2);
+
+    @media #{$tablet} {
+    	width: 18rem;
+    	height: 18rem;
+    }
+
     @media #{$mobile} {
       border-radius: 0;
       width: 100%;
@@ -414,7 +441,7 @@ main.content {
 
 
 .mobile-only {
-  display: none;
+  display: none !important;
   @media #{$mobile} {
     display: block;
   }

@@ -1,6 +1,11 @@
 .contact-links {
   display: flex;
 
+  /*@media #{$mobile} {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+*/
   a {
     opacity: 0.75;
     display: block;
@@ -12,8 +17,10 @@
     margin: 0px 16px 0px 0px;
     transition: opacity 0.2s ease;
     
-    
-
+/*    @media #{$mobile} {
+      margin-bottom: 4px;
+    }
+*/
     &.large {
       width: 32px;
       height: 32px;
@@ -29,6 +36,10 @@
       background-position: left center;
       background-size: 24px 16px;
       padding-left: 32px;
+
+      @media #{$mobile} {
+        display: none;
+      }
     }
 
     &.email {
