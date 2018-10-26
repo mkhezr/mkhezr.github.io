@@ -15,8 +15,7 @@ body {
   margin: 0;
   color: $text-color-dark;
   -moz-osx-font-smoothing: grayscale;
-  /*background: linear-gradient(to right, #b993d6, #8ca6db);*/
-  background: linear-gradient(to top, #f5d29e, #fbd3ff, #b3f0f5); //, #ffe4ac, #e7f7c2);
+  background-color: #fafafa;
 }
 
 main.content {
@@ -129,7 +128,7 @@ main.content {
     }
 
     &:hover {
-    	box-shadow: 0px 0px 25px rgba(#ffff88, 0.5);
+    	box-shadow: 0px 0px 15px rgba($teal, 1);
     }
 
     @media #{$tablet} {
@@ -201,39 +200,6 @@ main.content {
     .section-right {
       width: 100%;
     }
-  }
-}
-
-#seeall {
-  display: flex;
-  justify-content: flex-end;
-  user-select: none;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  color: $blue-green;
-  font-weight: 800;
-
-  @media #{$desktop} {
-    display: none;
-  }
-
-  @media #{$tablet} {
-    display: none;
-  }
-
-  .seeall-icon {
-    display: block;
-    width: 36px;
-    height: 36px;
-    margin-left: 5px;
-
-    background-image: url("../images/go-right.svg");
-    background-size: 36px 36px;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 }
 
