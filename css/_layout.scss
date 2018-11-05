@@ -113,6 +113,12 @@ main.content {
     @media #{$mobile} {
       margin-left: 0rem;
     }
+
+    &.vertical-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 	}
 
   .media {
@@ -140,6 +146,21 @@ main.content {
       width: 100%;
       height: auto;
     }
+  }
+}
+
+.resume-link {
+  display: flex;
+  align-items: center;
+  .resume-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/resume-icon.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 48px;
+    /*background-color: red;*/
   }
 }
 
